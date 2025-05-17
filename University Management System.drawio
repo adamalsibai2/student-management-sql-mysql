@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="24.8.8">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-1" value="Department&lt;div&gt;-department_id(PK)&lt;/div&gt;&lt;div&gt;-department_name(Unique)&amp;nbsp;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="270" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-2" value="Instructors&amp;nbsp;&lt;div&gt;-instructor_id(PK)&lt;/div&gt;&lt;div&gt;-first_name&lt;/div&gt;&lt;div&gt;-last_name&lt;/div&gt;&lt;div&gt;-email(Unique)&lt;/div&gt;&lt;div&gt;-department_id(FK)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.37;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="FHAad_lz4nSXdnKCfsJ0-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="270" as="sourcePoint" />
+            <mxPoint x="200" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-5" value="Courses&lt;div&gt;-course_id(PK)&lt;/div&gt;&lt;div&gt;-course_name&lt;/div&gt;&lt;div&gt;-credits&lt;/div&gt;&lt;div&gt;-instuctor_id(FK)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="300" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.095;entryY=0.175;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="FHAad_lz4nSXdnKCfsJ0-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="375" y="250" as="sourcePoint" />
+            <mxPoint x="425" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-11" value="Students&lt;div&gt;-student_id(PK)&lt;/div&gt;&lt;div&gt;-first_name&lt;/div&gt;&lt;div&gt;-last_name&lt;/div&gt;&lt;div&gt;dob&lt;/div&gt;&lt;div&gt;email(unique)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="460" y="130" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-13" value="Enrollments&lt;div&gt;-enrollment_id(PK)&lt;/div&gt;&lt;div&gt;-student_id (FK)&lt;/div&gt;&lt;div&gt;-course_id(FK)&lt;/div&gt;&lt;div&gt;-grade&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="200" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.004;entryY=0.353;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="FHAad_lz4nSXdnKCfsJ0-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="210" as="sourcePoint" />
+            <mxPoint x="640" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="FHAad_lz4nSXdnKCfsJ0-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="340" as="sourcePoint" />
+            <mxPoint x="630" y="280" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FHAad_lz4nSXdnKCfsJ0-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.945;exitY=0.78;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FHAad_lz4nSXdnKCfsJ0-1" target="FHAad_lz4nSXdnKCfsJ0-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="211" y="348" as="sourcePoint" />
+            <mxPoint x="390" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="1..+" placeholders="1" name="Variable" id="FHAad_lz4nSXdnKCfsJ0-18">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="385" y="250" width="80" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1..+" placeholders="1" name="Variable" id="FHAad_lz4nSXdnKCfsJ0-19">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="300" y="320" width="80" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1..+" placeholders="1" name="Variable" id="FHAad_lz4nSXdnKCfsJ0-20">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="120" y="220" width="80" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1..+" placeholders="1" name="Variable" id="FHAad_lz4nSXdnKCfsJ0-21">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="570" y="270" width="80" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="1..+" placeholders="1" name="Variable" id="FHAad_lz4nSXdnKCfsJ0-22">
+          <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" vertex="1" parent="1">
+            <mxGeometry x="610" y="190" width="80" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
